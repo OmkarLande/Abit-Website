@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root{
-  background-color: #1e1e1e;
+  background-color: #101010;
 }
 .bluespot{
-  height: 800px;
-  width: 700px;
-  margin-left: 627px;
-  margin-top: 211px;
+  height: 1500px;
+  width: 1350px;
+  margin-left: 450px;
+  margin-top: -200px;
   position: fixed;
   z-index: -1;
 }
