@@ -4,8 +4,13 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  
   theme: {
     extend: {},
+    fontFamily: {
+    Roboto: ['Roboto'],
+    Archivo: ['Archivo']
+  }
   },
   plugins: [],
 }
