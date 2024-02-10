@@ -15,7 +15,13 @@ export default {
     },
     fontFamily: {
     Roboto: ['Roboto'],
-    Archivo: ['Archivo']
+    
+  },
+  colors: {
+    btnpurple : '#7D7ED7',
+    btnblue : '#009EFF',
+    bgcolor : '#1e1e1e',
+    white: '#ffffff'
   }
   },
   plugins: [],
