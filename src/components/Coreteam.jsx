@@ -1,18 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaAngleUp, FaAngleDown } from "react-icons/fa6";
 import Teamcard from "./Teamcard";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
-const responsive = {
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 1
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 1
-    }
-};
 
 const Coreteam = () => {
     const teamData = [
@@ -21,6 +10,15 @@ const Coreteam = () => {
         { imageSrc: "jenil.png", imageAltText: "Jenil Kumbhani(Treasurer)", name: "Jenil Kumbhani", title: "Treasurer" },
         { imageSrc: "dhiraj.png", imageAltText: "Dhiraj Jadhav(Vice President)", name: "Dhiraj Jadhav", title: "Vice President" },
     ];
+
+    const [currIndex, setCurrIndex] = useState(0);
+
+    const handlePrevSlide = () => {
+        setCurrIndex((prevIndex) => (prevIndex === 0 ? teamData.length - 1 : prevIndex - 1))
+    }
+    const handleNextSlide = () => {
+        setCurrIndex((prevIndex) => (prevIndex === teamData.length - 1 ? 0 : prevIndex + 1))
+    }
     return (
         <section className="bg-[#5C5C5C40] max-w-full w-[343px] md:w-[1100px] md:h-[550px] border-[1px] rounded-3xl border-[#858080BF] p-2 my-10 mx-auto text-white text-center">
             <p className="text-4xl mb-4">Core Team</p>
@@ -32,24 +30,25 @@ const Coreteam = () => {
                         imageAltText={team.imageAltText}
                         name={team.name}
                         title={team.title}
-                        height="435px"
-                        width="255px"
-                        mobileHeight="368px"
-                        mobileWidth="216px"
                     />
                 ))}
             </div>
-            <Carousel responsive={responsive} className="md:hidden">
+            <div className="md:hidden relative h-[480px]">
                 {teamData.map((team, index) => (
-                    <Teamcard
-                        key={index}
-                        imageSrc={team.imageSrc}
-                        imageAltText={team.imageAltText}
-                        name={team.name}
-                        title={team.title}
-                    />
+                    <div key={index} style={{ display: index === currIndex ? 'block' : 'none' }}>
+                        <Teamcard
+                            imageSrc={team.imageSrc}
+                            imageAltText={team.imageAltText}
+                            name={team.name}
+                            title={team.title}
+                        />
+                    </div>
                 ))}
-            </Carousel>
+                <div className="absolute bottom-0 right-9 flex flex-col items-end">
+                    <FaAngleUp onClick={handleNextSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" />
+                    <FaAngleDown onClick={handlePrevSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" />
+                </div>
+            </div>
         </section>
     )
 }
