@@ -3,7 +3,7 @@ import Logo from '../images/Logo.png'
 
 function Herosection() {
   return (
-    <div className="Herosection flex flex-col sm:flex-row items-center justify-around mt-80 mb-20  text-white">
+    <div className="Herosection flex flex-row items-center justify-around mt-[80px] text-white">
       <div
         className="flex flex-col py-3 ml-5 items-center sm:items-start  justify-center space-y-3"
         style={{ minWidth:"356px", maxWidth: "531px", height: "383px" }}
