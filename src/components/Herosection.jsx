@@ -5,7 +5,7 @@ function Herosection() {
   return (
     <div className="Herosection flex flex-col sm:flex-row items-center justify-around mt-80 mb-20  text-white">
       <div
-        className="flex flex-col py-3 items-center sm:items-start justify-center space-y-3"
+        className="flex flex-col py-3 ml-5 items-center sm:items-start  justify-center space-y-3"
         style={{ minWidth:"356px", maxWidth: "531px", height: "383px" }}
       >
         <div>
@@ -17,7 +17,7 @@ function Herosection() {
           </h1>
         </div>
         <div style={{ fontSize: "18px", lineHeight: "22px" }}>
-          <h4 className="font-light mt-2 font-Roboto text-center sm:text-left">
+          <h4 className="font-light mt-2  font-Roboto text-center sm:text-left">
             ABIT is a dynamic departmental committee that provides a platform
             for IT students to develop technical and soft skills, enabling them
             to excel in their chosen fields.
@@ -25,8 +25,8 @@ function Herosection() {
         </div>
         <div className="flex items-start md:items-center">
           <button
-            className="my-5 w-36 h-9 rounded-3xl"
-            style={{ backgroundColor: "#009EFF" }}
+            className="my-5 w-36 h-9 rounded-3xl bg-btnpurple sm:bg-btnblue"
+            
           >
             <p className="font-normal font-Roboto text-lg "> Learn More </p>
           </button>
@@ -34,7 +34,7 @@ function Herosection() {
       </div>
       <div
         className="flex items-center justify-center"
-        style={{  minWidth:"356px", width: "531px", height: "383px" }}
+        style={{  minWidth:"250px", width: "531px", height: "383px" }}
       >
         <img src={Logo} alt="" />
       </div>
