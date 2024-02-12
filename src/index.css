@@ -16,3 +16,10 @@
   z-index: -1;
   position: fixed;
 }
+button{
+    background-color: #009EFF;
+}
+button:hover{
+    background-color: transparent;
+    border: 1px solid #009EFF;
+}

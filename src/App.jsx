@@ -2,6 +2,7 @@ import Herosection from './components/Herosection';
 import Coreteam from './components/Coreteam';
 import Motivators from './components/Motivators';
 import Ourmissons from './components/Ourmissons'
+import Potentials from './components/Potentials';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Coreteam />
       <Ourmissons/>
       <Motivators />
+      <Potentials/>
     </>
   );
 }
