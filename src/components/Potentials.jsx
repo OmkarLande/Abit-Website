@@ -2,7 +2,7 @@ import React from "react";
 
 const Potentials = () => {
   return (
-    <div className="Ourmissons flex flex-col  sm:flex-row items-center justify-center mt-[80px]  text-white">
+    <div className="Potentionals flex flex-col  md:flex-row items-center justify-center mt-[80px]  text-white">
       <div
         className="flex flex-col py-3 items-center  justify-center space-y-3"
         style={{ minWidth: "356px", maxWidth: "531px", height: "383px" }}

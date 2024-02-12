@@ -6,14 +6,14 @@ function Ourmissons() {
  
 
   return (
-    <div className="Ourmissons flex flex-col  sm:flex-row items-center justify-center mt-[80px]  text-white">
+    <div className="Ourmissons flex flex-col  md:flex-row items-center justify-center mt-[80px]  text-white">
       <div
-        className="flex flex-col py-3 items-center sm:items-start justify-center space-y-3"
+        className="flex flex-col py-3 items-center md:items-start justify-center space-y-3"
         style={{ minWidth: "356px", maxWidth: "531px", height: "383px" }}
       >
         <div>
           <h1
-            className="font-bold  mt-2 font-Roboto text-center sm:text-left text-3xl sm:text-4xl"
+            className="font-bold  mt-2 font-Roboto text-center md:text-left text-3xl md:text-4xl"
             style={{
               minWidth: "356px",
               maxWidth: "525px",
@@ -24,7 +24,7 @@ function Ourmissons() {
           </h1>
         </div>
         <div style={{ fontSize: "18px", lineHeight: "22px" }}>
-          <h4 className="font-light mt-2 font-Roboto text-center sm:text-left">
+          <h4 className="font-light mt-2 font-Roboto text-center md:text-left">
             ABIT (Association of Budding Information Technocrats) is dedicated
             to providing a platform for students to develop and enhance their
             technical and soft skills. Our mission is to nurture talented minds
@@ -37,7 +37,7 @@ function Ourmissons() {
         className="flex items-center justify-center flex-col space-y-5"
         style={{ minWidth: "356px", width: "531px", height: "383px" }}
       >
-        <div className="flex flex-col items-center justify-center sm:flex-row ">
+        <div className="flex flex-col items-center justify-center md:flex-row ">
           <div className="m-2 ">
             <h1 className="font-semibold font-Roboto text-2xl text-center">Our mission</h1>
             <p className="font-normal  text-center mt-5 font-Roboto">To be catalyst for growth and Innovation in the IT industry.</p>
