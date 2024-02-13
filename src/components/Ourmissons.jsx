@@ -17,7 +17,7 @@ function Ourmissons() {
             style={{
               minWidth: "356px",
               maxWidth: "525px",
-              lineHeight: "46.88px",
+              lineHeight: "47.88px",
             }}
           >
             Unleashing the Potential of Budding Technocrats
