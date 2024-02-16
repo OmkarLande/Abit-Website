@@ -23,6 +23,7 @@ export default {
     bgcolor : '#1e1e1e',
     white: '#ffffff'
   }
+ 
   },
   plugins: [],
 }
