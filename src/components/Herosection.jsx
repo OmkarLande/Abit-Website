@@ -1,9 +1,10 @@
 import React from "react";
 import Logo from '../images/Logo.png'
+import '../index.css';
 
 function Herosection() {
   return (
-    <div className="Herosection flex flex-row items-center justify-around mt-[80px] text-white">
+    <div className="Herosection flex flex-col md:flex-row items-center justify-center mt-[80px]  text-white">
       <div
         className="flex flex-col py-3 items-center sm:items-start justify-center space-y-3"
         style={{ minWidth:"356px", maxWidth: "531px", height: "383px" }}
@@ -26,7 +27,7 @@ function Herosection() {
         <div className="flex items-start md:items-center">
           <button
             className="my-5 w-36 h-9 rounded-3xl"
-            style={{ backgroundColor: "#009EFF" }}
+            
           >
             <p className="font-normal font-Roboto text-lg "> Learn More </p>
           </button>

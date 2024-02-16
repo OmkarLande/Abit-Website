@@ -6,7 +6,7 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <div>
-      <img className='bluespot sm:ml-0 sm:mt-0 lg:ml-[627px] lg:mt[211px]' src="spotlightBg.png" />
+      <img className='bluespot sm:ml-0 sm:mt-0 lg:ml-[265px] lg:mt[0px]' src="spotlightBg.png" />
     </div>
     <App />
   </React.StrictMode>,
