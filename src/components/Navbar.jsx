@@ -12,7 +12,7 @@ const Navbar = () => {
     let [open,setOpen]=useState(false);
     
     return (
-        <div className='shadow-md fixed top-10 left-10 right-10 bg-[#2d2d2d] rounded-full border-solid border-2 border-white px-4 py-1 flex items-center justify-between' >
+        <div className='shadow-md fixed top-5 left-10 right-10 bg-[#2d2d2d] rounded-full border-solid border-2 border-white px-4 py-1 flex items-center justify-between' >
             <div className='md:flex items-center justify-between py-0 md:px-10 px-7 w-full'>
                 <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] text-white'>
                     <span className='text-3xl text-indigo-600 mr-1 pt-2'></span>
