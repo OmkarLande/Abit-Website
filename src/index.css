@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   background-color: #1e1e1e;
 }
@@ -19,11 +18,10 @@
   z-index: -1;
   position: fixed;
 }
-button{
-    background-color: #009EFF;
+button {
+  background-color: #009eff;
 }
-button:hover{
-    background-color: transparent;
-    border: 1px solid #009EFF;
-
+button:hover {
+  background-color: transparent;
+  border: 1px solid #009eff;
 }

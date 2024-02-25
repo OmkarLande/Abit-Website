@@ -45,8 +45,8 @@ const Coreteam = () => {
                     </div>
                 ))}
                 <div className="absolute bottom-0 right-9 flex flex-col items-end">
-                    <FaAngleUp onClick={handleNextSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" />
-                    <FaAngleDown onClick={handlePrevSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" />
+                    <FaAngleUp onClick={handleNextSlide} size={32} className="bg-[#D9D9D9] hover:bg-white rounded-full p-1 my-3" style={{ color: 'black' }} />
+                    <FaAngleDown onClick={handlePrevSlide} size={32} className="bg-[#D9D9D9] hover:bg-white rounded-full p-1 my-3" style={{ color: 'black' }} />
                 </div>
             </div>
         </section>

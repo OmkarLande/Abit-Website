@@ -4,7 +4,7 @@ import '../index.css';
 
 function Herosection() {
   return (
-    <div className="Herosection flex flex-col md:flex-row items-center justify-center mt-[150px]  text-white">
+    <div className="Herosection flex flex-col md:flex-row items-center justify-center mt-[150px] text-white">
       <div
         className="flex flex-col py-3 ml-5 items-center sm:items-start  justify-center space-y-3"
         style={{ minWidth: "356px", maxWidth: "531px", height: "383px" }}
