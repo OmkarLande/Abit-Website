@@ -5,23 +5,20 @@ import Coreteam from './components/Coreteam';
 import Motivators from './components/Motivators';
 import Ourmissons from './components/Ourmissons'
 import Potentials from './components/Potentials';
+import FacultyCard from './components/FacultyCard';
 
 
 function App() {
 
   return (
     <>
-    <Navbar />
-     
-
-      
-      
-
+    {/* <Navbar />
       <Herosection />
       <Coreteam />
       <Ourmissons/>
       <Motivators />
-      <Potentials/>
+      <Potentials/> */}
+      {/* <FacultyCard/> */}
 
     </>
   );
