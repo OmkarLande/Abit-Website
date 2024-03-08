@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../firebase";
 import { getFirestore, getDocs, collection } from "firebase/firestore";
+import Flipcard from "../components/Flipcard";
+import Navbar from "../components/Navbar";
 
 const FacultyCard = () => {
   const [facultyData, setFacultyData] = useState([]);
@@ -27,19 +29,22 @@ const FacultyCard = () => {
     };
     fetchDataFromFirestore();
   }, []);
+  
 
   return (
     <div>
-      <div className="bg-bg">
-        {facultyData.map((data, ) => (
-          <div key={data.id}>
-            {console.log("data:", data)}
-            <img className="z-10 text-white font-bold font-Roboto" src={data.image} />
-            <p className="z-10 text-white font-bold font-Roboto">{data.name}</p>
-            <p className="z-10 text-white font-bold font-Roboto">{data.position}</p>
-            <p className="z-10 text-white font-bold font-Roboto">{data.quote}</p>
-            <p className="z-10 text-white font-bold font-Roboto">{data.linkedin}</p>
-            <p className="z-10 text-white font-bold font-Roboto">{data.mail}</p>
+      <Navbar/>
+      <div className="bg-bg flex flex-row flex-wrap justify-center items-center mt-32">
+        {facultyData.map((data) => (
+          <div key={data.id} className="">
+            <Flipcard
+              name={data.name}
+              image={data.image}
+              position={data.position}
+              quote={data.quote}
+              linkedin={data.linkedin}
+              mail={data.mail}
+            />
           </div>
         ))}
       </div>
