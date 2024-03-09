@@ -5,24 +5,19 @@ import Coreteam from './components/Coreteam';
 import Motivators from './components/Motivators';
 import Ourmissons from './components/Ourmissons'
 import Potentials from './components/Potentials';
-
+import Footer from './components/Footer';
 
 function App() {
 
   return (
     <>
-    <Navbar />
-     
-
-      
-      
-
+      <Navbar />
       <Herosection />
       <Coreteam />
-      <Ourmissons/>
+      <Ourmissons />
       <Motivators />
-      <Potentials/>
-
+      <Potentials />
+      <Footer />
     </>
   );
 }
