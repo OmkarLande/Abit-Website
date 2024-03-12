@@ -1,25 +1,24 @@
 
-import Navbar from './components/Navbar';
-import Herosection from './components/Herosection';
-import Coreteam from './components/Coreteam';
-import Motivators from './components/Motivators';
-import Ourmissons from './components/Ourmissons'
-import Potentials from './components/Potentials';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import FacultyCard from './pages/FacultyCard'
 
 function App() {
-
   return (
-    <>
-      <Navbar />
-      <Herosection />
-      <Coreteam />
-      <Ourmissons />
-      <Motivators />
-      <Potentials />
-      <Footer />
-    </>
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/faculty" element={<FacultyCard />} />
+        <Route path="/*" element={<DefaultComponent />} />
+      </Routes>
+    </Router>
+
   );
 }
+
+const DefaultComponent = () => {
+  return <div>404 Not Found</div>;
+};
 
 export default App;
