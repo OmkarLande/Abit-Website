@@ -12,17 +12,25 @@ const Coreteam = () => {
     ];
 
     const [currIndex, setCurrIndex] = useState(0);
+    const [isUpClicked, setIsUpClicked] = useState(false);
+    const [isDownClicked, setIsDownClicked] = useState(false);
 
     const handlePrevSlide = () => {
-        setCurrIndex((prevIndex) => (prevIndex === 0 ? teamData.length - 1 : prevIndex - 1))
-    }
+        setCurrIndex((prevIndex) => (prevIndex === 0 ? teamData.length - 1 : prevIndex - 1));
+        setIsUpClicked(true);
+        setIsDownClicked(false);
+    };
+
     const handleNextSlide = () => {
-        setCurrIndex((prevIndex) => (prevIndex === teamData.length - 1 ? 0 : prevIndex + 1))
-    }
+        setCurrIndex((prevIndex) => (prevIndex === teamData.length - 1 ? 0 : prevIndex + 1));
+        setIsDownClicked(true);
+        setIsUpClicked(false);
+    };
+
     return (
         <section className="bg-[#5C5C5C40] max-w-full w-[343px] md:w-[1100px] md:h-[550px] border-[1px] rounded-3xl border-[#858080BF] p-2 my-10 mx-auto text-white text-center">
-            <p className="text-4xl mb-4">Core Team</p>
-            <div className="hidden md:flex flex-col md:flex-row gap-x-4 gap-8 md:gap-0 md:my-6">
+            <p className="mb-4 text-4xl">Core Team</p>
+            <div className="flex-col hidden gap-8 md:flex md:flex-row gap-x-4 md:gap-0 md:my-6">
                 {teamData.map((team, index) => (
                     <Teamcard
                         key={index}
@@ -44,9 +52,31 @@ const Coreteam = () => {
                         />
                     </div>
                 ))}
-                <div className="absolute bottom-0 right-9 flex flex-col items-end">
-                    <FaAngleUp onClick={handleNextSlide} size={32} className="bg-[#D9D9D9] hover:bg-white rounded-full p-1 my-3" style={{ color: 'black' }} />
-                    <FaAngleDown onClick={handlePrevSlide} size={32} className="bg-[#D9D9D9] hover:bg-white rounded-full p-1 my-3" style={{ color: 'black' }} />
+                <div className="absolute bottom-0 flex flex-col items-end right-9">
+                    {/* <FaAngleUp onClick={handleNextSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" />
+                    <FaAngleDown onClick={handlePrevSlide} size={32} className="bg-[#D9D9D9] text-black hover:bg-white rounded-full p-1 my-3" /> */}
+                    <FaAngleUp
+                            onClick={handlePrevSlide}
+                            size={32}
+                            className="p-1 my-3 rounded-full"
+                            style={{
+                                color: "black",
+                                backgroundColor: isUpClicked ? "#d9d9d9" : "#787878",
+                                cursor: "pointer",
+                                transition: "background-color 0.2s ease"
+                            }}
+                        />
+                        <FaAngleDown
+                            onClick={handleNextSlide}
+                            size={32}
+                            className="p-1 my-2 rounded-full"
+                            style={{
+                                color: "black",
+                                backgroundColor: isDownClicked ? "#d9d9d9" : "#787878",
+                                cursor: "pointer",
+                                transition: "background-color 0.2s ease"
+                            }}
+                        />
                 </div>
             </div>
         </section>
