@@ -10,7 +10,7 @@ const Coreteam = () => {
         { imageSrc: "jenil.png", imageAltText: "Jenil Kumbhani(Treasurer)", name: "Jenil Kumbhani", title: "Treasurer" },
         { imageSrc: "dhiraj.png", imageAltText: "Dhiraj Jadhav(Vice President)", name: "Dhiraj Jadhav", title: "Vice President" },
     ];
-
+ 
     const [currIndex, setCurrIndex] = useState(0);
     const [isUpClicked, setIsUpClicked] = useState(false);
     const [isDownClicked, setIsDownClicked] = useState(false);

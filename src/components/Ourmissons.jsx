@@ -6,10 +6,10 @@ function Ourmissons() {
  
 
   return (
-    <div className="Ourmissons flex flex-col md:flex-row items-center justify-center mt-[80px] text-white px-4">
+    <div className="Ourmissons flex flex-col  md:flex-row items-center justify-center mt-[80px]  text-white p-3">
     
     <div className="flex flex-col py-3 items-center md:items-start justify-center text-center md:text-left space-y-3 w-full max-w-[531px]">
-      <h1 className="mt-2 text-3xl font-bold leading-tight font-Roboto md:text-4xl">
+      <h1 className="mt-2 text-3xl font-bold leading-tight font-Roboto md:text-4xl md:leading-snug">
         Unleashing the Potential of Budding Technocrats
       </h1>
       <h4 className="mt-2 text-lg font-light leading-6 font-Roboto">

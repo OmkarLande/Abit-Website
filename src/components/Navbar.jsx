@@ -15,7 +15,7 @@ const Navbar = () => {
     let [moreOpen, setMoreOpen] = useState(false);
 
     return (
-        <div className='fixed z-10 flex items-center justify-between px-6 py-4 border-2 rounded-full shadow-md top-5 md:top-8 left-4 right-4 bg-black/50 backdrop-blur-md border-white/20 md:px-16 md:left-36 md:right-36'>
+        <div className='fixed z-10 flex items-center justify-between p-2 px-6 py-4 border-2 rounded-full shadow-md top-5 md:top-8 left-4 right-4 bg-black/50 backdrop-blur-md border-white/20 md:px-16 md:left-36 md:right-36'>
             <div className='flex items-center justify-between w-full'>
                 <Link to="/" className="flex items-center ">
                     <img

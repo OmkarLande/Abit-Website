@@ -31,10 +31,10 @@ function Home() {
       <Coreteam className="component" />
       <Ourmissons className="component" /> 
       <Motivators className="component" />
-      {/* <Potentials className="component" />
+      <Potentials className="component" />
       <Sponsor className="component" /> 
-      <Events className="component" />
-       <Footer className="component" /> */}
+      {/* <Events className="component" />
+      <Footer className="component" /> */}
     </>
   );
 }
