@@ -33,8 +33,8 @@ function Home() {
       <Motivators className="component" />
       <Potentials className="component" />
       <Sponsor className="component" /> 
-      {/* <Events className="component" />
-      <Footer className="component" /> */}
+      <Events className="component" />
+      <Footer className="component" />
     </>
   );
 }
