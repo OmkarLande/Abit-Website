@@ -2,6 +2,10 @@ import React from 'react'
 
 const Events = () => {
     return (
+        <>
+        <hr className="h-px my-10 bg-transparent border-0" />
+        <hr className="h-px my-10 bg-transparent border-0" />
+        <hr className="h-px my-10 bg-transparent border-0" />
         <section className="bg-[#5C5C5C40] max-w-full w-[90%] md:w-[1096px] h-auto border-[1px] rounded-3xl border-[#858080BF] my-10 mx-auto text-white text-center p-4 md:p-8">
             <div className='grid gap-4 w-full max-w-[330px] md:max-w-[944px] mx-auto my-6'>
                 <span className='text-2xl font-semibold md:text-4xl'>Explore Our Work</span>
@@ -22,6 +26,7 @@ const Events = () => {
                 </div>
             </div>
         </section>
+        </>
     )
 }
 

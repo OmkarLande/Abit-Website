@@ -5,6 +5,8 @@ import '../index.css';
 
 function Herosection() {
   return (
+    <>
+    <hr className="h-px my-10 bg-transparent border-0" />
     <div className="flex items-center justify-center text-white px-4 mt-[110px] md:mt-[170px]">
       <div className="w-full max-w-6xl flex flex-col md:flex-row items-center justify-between md:w-[80%]">
         <div className="flex flex-col items-center md:items-start justify-center py-3 space-y-3 text-center md:text-left w-full md:w-[50%]">
@@ -24,6 +26,7 @@ function Herosection() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

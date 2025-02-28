@@ -60,6 +60,8 @@ function Footer() {
           </div>
         </section>
       </footer>
+      <hr className="h-px my-10 bg-transparent border-0" />
+      <hr className="h-px my-10 bg-transparent border-0" />
     </>
   );
 }

@@ -6,6 +6,8 @@ function Ourmissons() {
  
 
   return (
+    <>
+    <hr className="h-px my-10 bg-transparent border-0" />
     <div className="Ourmissons flex flex-col  md:flex-row items-center justify-center mt-[80px]  text-white p-3">
     
     <div className="flex flex-col py-3 items-center md:items-start justify-center text-center md:text-left space-y-3 w-full max-w-[531px]">
@@ -39,7 +41,10 @@ function Ourmissons() {
         </button>
       </div>
     </div>
-  </div>  
+  </div> 
+  <hr className="h-px my-10 bg-transparent border-0" />
+  <hr className="h-px my-10 bg-transparent border-0" />
+  </> 
   
 
   );
